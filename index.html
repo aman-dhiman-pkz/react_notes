@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+  </head>
+  <body>
+    <h1>Hello I am gonna load</h1>
+    <div id="container"></div>
+  </body>
+  <script>
+    const element = document.getElementById("container");
+    const str = "Hello I was written by Javascript Variable";
+    const arr = ["Apple", "Fig", "Choco", "Grapes"];
+    /*
+                    const persons = [
+                      {name:'Ajay',age:40,address:'Pune'},
+                      {name:'Amir',age:30,address:'Mumabi'},
+                      {name:'SRK',age:50,address:'Delhi'},
+                      {name:'Salman',age:25,address:'Agra'}
+                    ]
+    */
+    const convertedArr = arr.map((i) => "<h2>" + i + "</h2>");
+    element.innerHTML = convertedArr.join("");
+  </script>
+</html>
